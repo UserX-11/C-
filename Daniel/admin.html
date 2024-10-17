@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Administração - Ônibus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Administração</h1>
+    </header>
+    <div class="container">
+        <h2>Login do Administrador</h2>
+        <form id="login-form">
+            <label for="admin-login">Login:</label>
+            <input type="text" id="admin-login" required>
+            <label for="admin-password">Senha:</label>
+            <input type="password" id="admin-password" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="admin-area" style="display: none;">
+            <h2>Reservas</h2>
+            <div id="reservations"></div>
+            <button id="logout">Sair</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Empresa de Ônibus XYZ. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
